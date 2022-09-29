@@ -1,0 +1,53 @@
+.container {
+  height: 100vh;
+  text-align: center;
+  display: flex;  
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#121212, #212b46);
+}
+
+.title{
+  font-size: 90px;
+  color: rgb(58, 24, 209);
+  animation: flipTitle 2s;
+}
+
+@keyframes flipTitle {
+from{
+  transform: rotateX(90deg);
+}
+to{
+  transform: rotateX(0deg);
+}
+}
+
+.containerInput{
+  background-color: rgb(225, 225, 255, 0.2);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+  
+}
+
+.containerInput input{  
+  border: 0;
+  font-size: 20px;
+  color: rgb(13, 5, 5);
+  outline: none;
+  margin-right: 8px;
+}
+
+.containerInput input::placeholder{
+color: #FFF;
+}
+
+/* .buttonSearsh{
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+} */
+
