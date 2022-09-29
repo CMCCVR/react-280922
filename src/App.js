@@ -12,7 +12,7 @@ function App() {
       <h2>PAÍS : {pais.nome}</h2>
       <input disabled type="text" value={pais.nome} />
       <div>
-        {paises.slice(currentPage * 10 -10, currentPage * 10).map((p) => (
+        {paises.slice(currentPage * 10 - 10, currentPage * 10).map((p) => (
           <img
             onMouseOver={() => setPais(p)}
             style={{
@@ -30,7 +30,7 @@ function App() {
         className="pagination-bar"
         currentPage={currentPage}
         totalCount={paises.length}
-        pageSize={10}
+        pageSize={15}
         onPageChange={page => setCurrentPage(page)}
       />
     </div>
